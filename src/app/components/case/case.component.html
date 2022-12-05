@@ -11,15 +11,34 @@
       <div class="row">
         <div class="col white">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link active" data-toggle="pill" role="tab" aria-controls="v-pills-home" aria-selected="true" (click)="somefunction('wahrnehmen')">Übung zum Wahrnehmen</a>
-              <a class="nav-link"  data-toggle="pill" role="tab" aria-controls="v-pills-profile" aria-selected="false">Übung zum Teilnehmen</a>
-              <a class="nav-link"  data-toggle="pill" role="tab" aria-controls="v-pills-messages" aria-selected="false">Übung zum Beschreiben</a>
-              <a class="nav-link"  data-toggle="pill" role="tab" aria-controls="v-pills-settings" aria-selected="false">Skill xyz</a>
+            <div *ngFor="let h of headings">
+              <a class="nav-link" id="{{h.id}}" data-toggle="pill" role="tab" aria-controls="v-pills-home" aria-selected="false" (click)="somefunction(h.heading, h.id)">{{h.heading}}</a>
+            </div>
             </div>
 
         </div>
         <div class="col white">
-          <div id="deletecase" (click)="delete('Wahrnehmen')">
+
+          <!-- Dialog zum löschen -->
+          <div id="deleteDialog" class="modal">
+            
+            <form class="modal-content" >
+              <div class="container">
+                <h1>Löschen</h1>
+                <p>Seite aus dem Notfallkoffer löschen?</p>
+
+                <div class="clearfix">
+                  <button type="button" class="deletebtn"  (click)="delete()" >Löschen</button>
+                  <button type="button" class="cancelbtn" (click)="cancle()">Abbrechen</button>
+                  
+                </div>
+              </div>
+            </form>
+            <span (click)="cancle()" class="close" title="Schließen">&times;</span>
+          </div>
+
+          <!--Button zum Löschen-->
+          <div id="deletecase" onclick="document.getElementById('deleteDialog').style.display='block'">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
               <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
             </svg>
