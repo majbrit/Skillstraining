@@ -1,0 +1,12 @@
+.book{
+    background-color: white;
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    width: 90%;
+
+
+    height: calc(100vw);
+    min-height: 400px;
+    max-height:  calc(100vh - 250px);
+}

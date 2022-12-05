@@ -1,0 +1,32 @@
+.book{
+    background-color: white;
+    position: relative;
+    left: 5%;
+    top: 100px;
+    width: 90%;
+    height: 100px;
+}
+#heading{
+    margin-left: 10px;
+}
+
+#dots{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 0px;
+    border-width: 0px;
+    border-radius: 100%;
+  }
+  #dots:hover{
+    color:black;
+    background-color: rgb(240, 240, 240);
+  }
+
+
+
+#right{
+    position:absolute;
+    right: 0px;
+}
+  

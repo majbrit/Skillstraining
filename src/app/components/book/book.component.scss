@@ -1,0 +1,130 @@
+/* The animation code */
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+  
+  /* The element to apply the animation to */
+
+  
+.book{
+    background-color: white;
+    position: relative;
+    left: 5%;
+    top: 100px;
+    width: 90%;
+    height: 100px;
+}
+.book:active{
+  animation-name: example;
+  animation-duration: 4s;
+}
+.book:focus{
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+#myAnimation{
+  position:relative;
+  left:100px;
+  width:100px;
+  height: 100px;
+  background-color:black;
+}
+.white{
+  position:relative;
+  background-color: white;
+  margin: 1px;
+
+  height: calc(100vw);
+  min-height: 400px;
+  max-height:  calc(100vh - 250px);
+  padding: 2%;
+
+}
+#page1{
+  background-color: rgb(166, 98, 73);
+  padding: 0.2%;
+  padding-left: 1%;
+  margin-left: 5%;
+  padding-right: 1%;
+  margin-right: 5%;
+  margin-top: 20px;
+}
+#page2{
+  background-color: rgb(214, 214, 214);
+  padding-right: 1%;
+  padding-left: 1%;
+}
+#page3{
+  background-color: rgb(232, 232, 232);
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+a{
+  color:darkslategrey;
+}
+a:hover{
+  color:rgb(255, 166, 0);
+}
+a:active{
+  background-color: orangered;
+}
+.bottom-line{
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
+#savecase{
+  position: absolute;
+  /*border-style: solid;
+  border-width: 2px;
+  border-color: rgb(208, 208, 208);*/
+  padding: 20px;
+
+  top: 0px;
+  right: 0px;
+}
+#savecase:hover{
+  background-color: #f4ecec;
+}
+
+
+
+
+
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 300px;
+  height: 5px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%; 
+  background: #4e4e4e;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 2px;
+  border-radius: 50%;
+  background: #303030;
+  cursor: pointer;
+}
+

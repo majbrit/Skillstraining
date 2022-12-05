@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: orangered;
+}
+
+.no-space{
+    position: relative;
+    margin:0;
+    padding: 0;
+    border: 0;
+
+}
+.no-bottom-space{
+    background-color: rgb(250, 250, 250);
+    margin-bottom:0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.nav-button{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    border-color: rgb(254, 166, 135);
+    margin-left: 2px;
+    padding-bottom: 0;
+
+    color: rgb(82, 82, 82);
+
+
+}
+.nav-button:hover{
+    background-color: rgb(254, 166, 135);
+    
+
+
+}
+
+.nav-button:focus{
+    background-color: orangered;
+    color: white;
+
+}
+
+
+
+

@@ -1,0 +1,99 @@
+.case{
+    position: relative;
+}
+.white{
+    position: relative;
+    background-color: white;
+    margin: 20px;
+
+    height: calc(100vw);
+    min-height: 400px;
+    max-height:  calc(100vh - 250px);
+    padding: 2%;
+
+}
+.my-container{
+    background-color: rgb(166, 98, 73);
+    border-style: solid;
+    border-width: 15px;
+    border-color:rgb(173, 110, 73);
+    padding-left: 5%;
+    margin-left: 5%;
+    padding-right: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+.closure{
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: silver;
+    
+    
+
+}
+#left1{
+    left: calc(5% - 20px);
+    top: 100px;
+}
+#left2{
+    left: calc(5% - 20px);
+    bottom: 100px;
+}
+#right1{
+    right: calc(5% - 20px);
+    top: 100px;
+
+}
+#right2{
+    right: calc(5% - 20px);
+    bottom: 100px;
+}
+
+.handle{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(56, 25, 25);
+}
+#ha1{
+    right: calc(5% - 60px);
+    top: 200px;
+}
+#ha2{
+    right: calc(5% - 60px);
+    bottom: 200px;
+}
+#ha3{
+    width: 50px;
+    height: calc(100vh - 580px);
+    min-height: 70px;
+    border-radius: 30px;
+    right: calc(5% - 80px);
+    bottom: 200px;
+}
+
+.middleline{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    background-color: rgb(173, 110, 73);
+    top: 0px;
+    left: calc(50vw - 15px);
+}
+
+#deletecase{
+    position: absolute;
+    /*border-style: solid;
+    border-width: 2px;
+    border-color: rgb(208, 208, 208);*/
+    padding: 20px;
+  
+    top: 0px;
+    right: 0px;
+  }
+  #deletecase:hover{
+    background-color: #f4ecec;
+    color:rgb(255, 27, 27);
+  }
