@@ -67,11 +67,10 @@ a{
   color:darkslategrey;
 }
 a:hover{
-  color:rgb(255, 166, 0);
+  background-color :rgba(255, 166, 0, 0.504);
+  color:darkslategrey;
 }
-a:active{
-  background-color: orangered;
-}
+
 .bottom-line{
   position: absolute;
   width: 100%;
@@ -92,6 +91,11 @@ a:active{
   background-color: #f4ecec;
 }
 
+
+.right{
+  position: absolute;
+  right: 8%;
+}
 
 
 
@@ -127,4 +131,6 @@ a:active{
   background: #303030;
   cursor: pointer;
 }
+
+
 

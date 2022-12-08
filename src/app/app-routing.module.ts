@@ -9,6 +9,8 @@ import { BonusComponent } from './components/bonus/bonus.component';
 import { NotebookComponent } from './components/notebook/notebook.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { EmptyComponent } from './components/empty/empty.component';
+import { HomeComponent } from './components/home/home.component';
+
 
 const routes: Routes = [
   { path: "navigation", component: NavigationComponent },
@@ -18,6 +20,7 @@ const routes: Routes = [
   { path: "notebook", component: NotebookComponent },
   { path: "settings", component: SettingsComponent },
   { path: "empty", component: EmptyComponent },
+  { path: "**", component: HomeComponent },
 
 ];
 

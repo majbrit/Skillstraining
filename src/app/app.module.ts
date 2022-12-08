@@ -11,6 +11,7 @@ import { BonusComponent } from './components/bonus/bonus.component';
 import { NotebookComponent } from './components/notebook/notebook.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { EmptyComponent } from './components/empty/empty.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -23,7 +24,8 @@ import { EmptyComponent } from './components/empty/empty.component';
     BonusComponent,
     NotebookComponent,
     SettingsComponent,
-    EmptyComponent
+    EmptyComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

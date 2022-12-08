@@ -14,7 +14,7 @@
                 <div class="col-11">
                     <nav class="navbar navbar-expand-lg no-bottom-space">
                         <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Schattauer</a>
+                        <a class="navbar-brand" href="#" routerLink="**">Schattauer</a>
                         <!--
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -27,24 +27,22 @@
                             </li>
                         -->
                             <li class="nav-item">
-                                <button class="nav-button" routerLinkActive="active-link" routerLink="/book">
+                                <button class="nav-button" routerLink="/book" id="book-nav" (click)="select('book-nav')">
                                     <img src="../assets/book.svg" width="20" height="20" >
                                     <p>Buch</p>
                                 </button>
                             <li class="nav-item">
-                                <button class="nav-button" routerLink="/bonus">
+                                <button class="nav-button" routerLink="/bonus" id="bonus-nav" (click)="select('bonus-nav')">
                                     <img src="../assets/bonus.svg" width="20" height="20" >
                                     <p>Bonuspunkte</p>
                                 </button>
                             <li class="nav-item">
-                                <button class="nav-button" routerLink="/case">
+                                <button class="nav-button" routerLink="/case" id="case-nav" (click)="select('case-nav')">
                                     <img src="../assets/case.svg" width="20" height="20" >
-
-
                                     <p>Notfallkoffer</p>
                                 </button>
                             <li class="nav-item">
-                                <button class="nav-button" routerLink="/notebook">
+                                <button class="nav-button" routerLink="/notebook" id="note-nav" (click)="select('note-nav')">
                                     <img src="../assets/note.svg" width="20" height="20" >
                                     <p>Notizbuch</p>
                                 </button>
