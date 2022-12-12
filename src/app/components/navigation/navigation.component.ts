@@ -15,4 +15,8 @@ export class NavigationComponent {
     (<HTMLInputElement>document.getElementById(navItem)).style.color="white";
     this.selected = navItem;
   }
+  deselect(){
+    (<HTMLInputElement>document.getElementById(this.selected)).style.backgroundColor="white";
+    (<HTMLInputElement>document.getElementById(this.selected)).style.color="rgb(82, 82, 82)";
+  }
 }

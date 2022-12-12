@@ -25,6 +25,7 @@
   animation-duration: 4s;
 }
 
+
 #myAnimation{
   position:relative;
   left:100px;
@@ -78,6 +79,7 @@ a:hover{
 }
 
 #savecase{
+  /*visibility: hidden;*/
   position: absolute;
   /*border-style: solid;
   border-width: 2px;
@@ -130,6 +132,60 @@ a:hover{
   border-radius: 50%;
   background: #303030;
   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+#snackbar {
+  visibility: hidden;
+  /*min-width: 250px;*/
+  /*margin-left: -125px;*/
+  background-color: rgb(233, 233, 233);
+  color: rgb(63, 63, 63);
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px;
+  position: absolute;
+  right: 5px;
+  top: 80px;
+  z-index: 1;
+  /*left: 50%;*/
+  /*bottom: 30px;*/
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 80px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 80px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 80px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 80px; opacity: 1;}
+  to {top: 0; opacity: 0;}
 }
 
 
