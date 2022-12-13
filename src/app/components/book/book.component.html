@@ -11,7 +11,10 @@
                     <div class="nav flex-column nav-pills point" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <div *ngFor="let h of headings">
                           <a class="nav-link" id="{{h.id}}" data-toggle="pill" role="tab" aria-controls="v-pills-home" aria-selected="false" (click)="somefunction(h.id)"  
-                          [style.background-color]="color(h.id)">{{h.heading}}</a>
+                          [style.background-color]="color(h.id)"
+
+                          
+                          >{{h.heading}}</a>
                           
                         </div>
                       </div>
@@ -22,12 +25,12 @@
                     </div>
                 </div>
                 <div class="col white">
-                    <div id="savecase" (click)="save('Wahrnehmen')">
+                    <div id="savecase" (click)="save()">
                         <img src="../assets/savecase.svg" width="34" height="34" >
 
 
                     </div>
-                    <div id="snackbar">Seite wurde im Notfallkoffer gespeichert</div>
+                        <div id="snackbar">{{snackbar}}</div>
                     <h2>{{selected}}</h2>
                     <p>{{text}}</p>
                     <div class="bottom-line">

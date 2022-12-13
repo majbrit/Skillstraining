@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from "@angular/router";
+import { Routes, RouterModule, Router } from "@angular/router";
+
 
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { CaseComponent } from './components/case/case.component';
@@ -34,4 +35,8 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+  constructor(private _router:Router){
+    this._router.navigate(['/**']);
+  }
+}
