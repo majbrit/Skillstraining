@@ -71,6 +71,48 @@ export class BookComponent {
     
   }
 
+  next(){
+    let next: boolean = false;
+    for (var h of this.headings) {
+      if(next){
+        this.oldId = h.id;
+        this.selected = h.heading;
+        this.text = h.text;
+        this.heroService.setIdBook(h.id);
+        this.heroService.setSelectedBook(h.heading);
+        this.heroService.setTextBook(h.text);
+        next = false;
+        return;
+      }
+      if(this.heroService.getIdBook()==h.id){
+        next = true;
+      }
+    }
+  }
+
+  prev(){
+    let s: string = 'Einführung';
+    let t: string = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.';
+    let oId: string = 'ue1';
+    for (var h of this.headings) {
+
+      if(this.heroService.getIdBook()==h.id){
+        this.oldId = oId;
+        this.selected = s;
+        this.text = t;
+        this.heroService.setIdBook(oId);
+        this.heroService.setSelectedBook(s);
+        this.heroService.setTextBook(t);
+        return;
+      }
+      s = h.heading;
+      t = h.text;
+      oId = h.id;
+    }
+      
+      
+  }
+
 
 
 }

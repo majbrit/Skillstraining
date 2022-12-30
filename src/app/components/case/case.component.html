@@ -9,7 +9,7 @@
   <div class="handle" id="ha3"></div>
   <div class="my-container">
       <div class="row">
-        <div class="col white">
+        <div class="col-md white">
           <div class="nav flex-column nav-pills point" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <div *ngFor="let h of headings">
               <a class="nav-link" id="{{h.id}}" data-toggle="pill" role="tab" aria-controls="v-pills-home" aria-selected="false" (click)="somefunction(h.heading, h.id)"
@@ -18,7 +18,7 @@
           </div>
 
         </div>
-        <div class="col white"
+        <div class="col-md white"
         [style.visibility]="visible()">
 
           <!-- Dialog zum löschen -->
@@ -26,6 +26,7 @@
             
             <form class="modal-content" >
               <div class="container">
+                <span (click)="cancle()" class="close" title="Schließen">&times;</span>
                 <h1>Löschen</h1>
                 <p>Seite aus dem Notfallkoffer löschen?</p>
 
@@ -36,7 +37,7 @@
                 </div>
               </div>
             </form>
-            <span (click)="cancle()" class="close" title="Schließen">&times;</span>
+            
           </div>
 
           <!--Button zum Löschen-->

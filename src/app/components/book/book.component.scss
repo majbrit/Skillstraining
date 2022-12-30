@@ -14,7 +14,7 @@
     left: 5%;
     top: 100px;
     width: 90%;
-    height: 100px;
+    //height: 100px;
 }
 .book:active{
   animation-name: example;
@@ -26,22 +26,17 @@
 }
 
 
-#myAnimation{
-  position:relative;
-  left:100px;
-  width:100px;
-  height: 100px;
-  background-color:black;
-}
+
 .white{
   position:relative;
   background-color: white;
   margin: 1px;
 
-  height: calc(100vw);
-  min-height: 400px;
-  max-height:  calc(100vh - 250px);
+  //height: calc(100vw);
+  //min-height: 400px;
+  //max-height:  calc(100vh - 250px);
   padding: 2%;
+  min-height: 100%;
 
 }
 #page1{
@@ -72,10 +67,18 @@ a:hover{
   color: rgb(204, 127, 33);
 }
 
-.bottom-line{
+.bottom-line-left{
+  position: absolute;
+  //width: 100%;
+  bottom: 10px;
+}
+.bottom-line-right{
   position: absolute;
   width: 100%;
   bottom: 10px;
+}
+.line-object:hover{
+  color:orangered;
 }
 
 #savecase{
@@ -107,7 +110,9 @@ a:hover{
 
 .slider {
   -webkit-appearance: none;
-  width: 300px;
+
+  //width: 300px;
+  width: 90%;
   height: 5px;
   border-radius: 5px;  
   background: #d3d3d3;
@@ -190,4 +195,7 @@ a:hover{
 }
 
 
+.space{
+  height: 20px;
+}
 

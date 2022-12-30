@@ -10,7 +10,6 @@ import { CaseComponent } from './components/case/case.component';
 import { BonusComponent } from './components/bonus/bonus.component';
 import { NotebookComponent } from './components/notebook/notebook.component';
 import { SettingsComponent } from './components/settings/settings.component';
-import { EmptyComponent } from './components/empty/empty.component';
 import { HomeComponent } from './components/home/home.component';
 
 
@@ -24,7 +23,6 @@ import { HomeComponent } from './components/home/home.component';
     BonusComponent,
     NotebookComponent,
     SettingsComponent,
-    EmptyComponent,
     HomeComponent
   ],
   imports: [
