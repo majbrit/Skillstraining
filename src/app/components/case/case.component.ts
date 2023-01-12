@@ -33,45 +33,20 @@ export class CaseComponent {
     }
     return 'visible';
   }
-/*headings : any = [
-  {
-    "heading": "Überschrift 1"
-
-  },
-  {
-    "heading": "Überschrift 2"
-
-  },
-  {
-    "heading": "Überschrift 3"
-
-  }
-]*/
 
   somefunction(heading:string, id:string){
-    //if(this.oldId != ''){
-      //(<HTMLInputElement>document.getElementById(this.oldId)).style.backgroundColor = "white";
-    //}
-    //(<HTMLInputElement>document.getElementById(id)).style.backgroundColor = "orange";
-    
     for (var h of this.headings) {
       if(id==h.id){
         this.text = h.text;
         this.selected = h.heading;
       }
     }
-    //this.oldId = id;
-
     this.heroService.setIdCase(id);
-      this.heroService.setSelectedCase(this.selected);
-      this.heroService.setTextCase(this.text);
-    //this.headings.push(heading);
-    //console.log(this.headings);
+    this.heroService.setSelectedCase(this.selected);
+    this.heroService.setTextCase(this.text);
   }
 
   delete(){
-    console.log("hall");
-    //console.log(this.headings.heading.indexOf(this.selected));
     this.headings = this.heroService.getHeadingsCase();
     this.heading = this.heroService.getHeadingCase();
     this.headings.splice(this.heading.indexOf(this.heroService.getSelectedCase()),1);
@@ -88,6 +63,4 @@ export class CaseComponent {
     (<HTMLInputElement>document.getElementById('deleteDialog')).style.display = "none";
 
   }
-
-
 }

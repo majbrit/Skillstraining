@@ -104,6 +104,4 @@ export class HeroService {
   public setHeadingsCase(h : any){
     this.headingsCase = h;
   }
-
-
 }

@@ -22,18 +22,15 @@
         [style.visibility]="visible()">
 
           <!-- Dialog zum löschen -->
-          <div id="deleteDialog" class="modal">
-            
+          <div id="deleteDialog" class="modal">            
             <form class="modal-content" >
               <div class="container">
                 <span (click)="cancle()" class="close" title="Schließen">&times;</span>
                 <h1>Löschen</h1>
                 <p>Seite aus dem Notfallkoffer löschen?</p>
-
                 <div class="clearfix">
                   <button type="button" class="deletebtn"  (click)="delete()" >Löschen</button>
-                  <button type="button" class="cancelbtn" (click)="cancle()">Abbrechen</button>
-                  
+                  <button type="button" class="cancelbtn" (click)="cancle()">Abbrechen</button>                  
                 </div>
               </div>
             </form>
@@ -49,7 +46,6 @@
           <h2>{{selected}}</h2>
             <p>{{text}}</p>
           </div>
-
       </div>
   </div>
   <div class="middleline"></div>

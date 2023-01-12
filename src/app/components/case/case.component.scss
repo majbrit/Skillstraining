@@ -11,15 +11,10 @@
     position: relative;
     background-color: white;
     margin: 20px;
-/*
-    height: calc(100vh - 250px);
-    min-height: 100%;*/
     padding: 2%;
-
 }
 
 .my-container{
-
     background-color: rgb(166, 98, 73);
     border-style: solid;
     border-width: 15px;
@@ -28,9 +23,7 @@
     margin-left: 5%;
     padding-right: 5%;
     margin-right: 5%;
-    margin-top: 20px;
-
-    
+    margin-top: 20px;  
 }
 
 .closure{
@@ -38,9 +31,6 @@
     width: 20px;
     height: 60px;
     background-color: silver;
-    
-    
-
 }
 #left1{
     left: calc(5% - 20px);
@@ -62,11 +52,9 @@
 
 .handle{
     position: absolute;
-    /*width: 60px;*/
     width: 2%;
     height: 30px;
     background-color: rgb(56, 25, 25);
-    /*right: calc(5% - 60px);*/
     right: 3%;
 }
 #ha1{  
@@ -76,19 +64,12 @@
     bottom: 200px;
 }
 #ha3{
-
-    /*width: 50px;*/
     height: calc(100vh - 620px);
-    /*min-height: 70px;*/
     border-radius: 30px;
-    /*right: calc(5% - 80px);*/
     right: 2%;
     top: 200px;
     bottom: 200px;
-
 }
-
-
 
 .middleline{
     position: absolute;
@@ -101,11 +82,7 @@
 
 #deletecase{
     position: absolute;
-    /*border-style: solid;
-    border-width: 2px;
-    border-color: rgb(208, 208, 208);*/
     padding: 20px;
-  
     top: 0px;
     right: 0px;
   }
@@ -114,18 +91,13 @@
     color:rgb(255, 27, 27);
   }
 
-
-
-
-
-  a{
+a{
     color:darkslategrey;
   }
-  a:hover{
+a:hover{
     /*background-color :rgba(255, 166, 0, 0.504);*/
     color: rgb(204, 127, 33);
   }
-
 
 /* Set a style for all buttons */
 button {
@@ -161,9 +133,7 @@ button:hover {
 
 /* Add padding and center-align text to the container */
 .container {
-  
   padding: 16px;
-  
 }
 
 /* The Modal (background) */
@@ -178,7 +148,6 @@ button:hover {
   overflow: auto; /* Enable scroll if needed */
   background-color: #b6b6b65c;
   padding-top: 50px;
-  
 }
 
 /* Modal Content/Box */
@@ -192,19 +161,12 @@ button:hover {
 
 /* Style the horizontal ruler */
 hr {
-
   margin-bottom: 25px;
 }
 
 /* The Modal Close Button (x) */
 .close {
   float: right;
-  /*
-  position: absolute;
-  
-
-  right: 30%;
-  top: 30%;*/
   font-size: 40px;
   font-weight: bold;
   color: #888888;

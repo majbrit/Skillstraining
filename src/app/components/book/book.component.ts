@@ -19,7 +19,6 @@ export class BookComponent {
     this.headings = this.heroService.getHeadingsBook();
    }
 
-  //heading: Array<string> = ['Überschrift 1', 'Überschrift 2', 'Wahrnehmen', 'Übung zum Wahrnehmen', 'Übung zum Teilnehmen', 'Übung zum Beschreiben', 'Skill xyz']
   headings: any = [];
   selected: string = '';
   text: string = '';
@@ -33,12 +32,6 @@ export class BookComponent {
       return 'white';
   }
   somefunction(id:string){
-    //this.oldId = this.heroService.getIdBook();
-
-      //(<HTMLInputElement>document.getElementById(this.oldId)).style.backgroundColor = "white";
-
-
-      //(<HTMLInputElement>document.getElementById(id)).style.backgroundColor = "orange";
       for (var h of this.headings) {
         if(id==h.id){
           this.text = h.text;
@@ -48,7 +41,6 @@ export class BookComponent {
       this.heroService.setIdBook(id);
       this.heroService.setSelectedBook(this.selected);
       this.heroService.setTextBook(this.text);
-
   }
 
   save() {
@@ -67,8 +59,7 @@ export class BookComponent {
         return true;
       }
     }
-    return false;
-    
+    return false;  
   }
 
   next(){
@@ -108,14 +99,6 @@ export class BookComponent {
       s = h.heading;
       t = h.text;
       oId = h.id;
-    }
-      
-      
+    }    
   }
-
-
-
 }
-
-
-

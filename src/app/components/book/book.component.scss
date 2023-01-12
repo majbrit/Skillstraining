@@ -1,12 +1,8 @@
-/* The animation code */
 
 @keyframes example {
     from {background-color: red;}
     to {background-color: yellow;}
   }
-  
-  /* The element to apply the animation to */
-
   
 .book{
     background-color: white;
@@ -14,7 +10,6 @@
     left: 5%;
     top: 100px;
     width: 90%;
-    //height: 100px;
 }
 .book:active{
   animation-name: example;
@@ -25,16 +20,10 @@
   animation-duration: 4s;
 }
 
-
-
 .white{
   position:relative;
   background-color: white;
   margin: 1px;
-
-  //height: calc(100vw);
-  //min-height: 400px;
-  //max-height:  calc(100vh - 250px);
   padding: 2%;
   min-height: 100%;
 
@@ -63,13 +52,11 @@ a{
   color:darkslategrey;
 }
 a:hover{
-  /*background-color :rgba(255, 166, 0, 0.504);*/
   color: rgb(204, 127, 33);
 }
 
 .bottom-line-left{
   position: absolute;
-  //width: 100%;
   bottom: 10px;
 }
 .bottom-line-right{
@@ -82,13 +69,8 @@ a:hover{
 }
 
 #savecase{
-  /*visibility: hidden;*/
   position: absolute;
-  /*border-style: solid;
-  border-width: 2px;
-  border-color: rgb(208, 208, 208);*/
   padding: 20px;
-
   top: 0px;
   right: 0px;
 }
@@ -96,22 +78,13 @@ a:hover{
   background-color: #f4ecec;
 }
 
-
 .right{
   position: absolute;
   right: 8%;
 }
 
-
-
-
-
-
-
 .slider {
   -webkit-appearance: none;
-
-  //width: 300px;
   width: 90%;
   height: 5px;
   border-radius: 5px;  
@@ -140,20 +113,8 @@ a:hover{
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
 #snackbar {
   visibility: hidden;
-  /*min-width: 250px;*/
-  /*margin-left: -125px;*/
   background-color: rgb(233, 233, 233);
   color: rgb(63, 63, 63);
   text-align: center;
@@ -163,8 +124,6 @@ a:hover{
   right: 5px;
   top: 80px;
   z-index: 1;
-  /*left: 50%;*/
-  /*bottom: 30px;*/
   font-size: 17px;
 }
 
@@ -194,8 +153,6 @@ a:hover{
   to {top: 0; opacity: 0;}
 }
 
-
 .space{
   height: 20px;
 }
-

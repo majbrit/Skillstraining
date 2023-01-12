@@ -9,8 +9,6 @@
 #heading{
     margin-left: 10px;
 }
-
-
 #dots{
     position: absolute;
     float: right;
@@ -21,22 +19,16 @@
     border: 0px hidden;
     background-color: rgba(255, 255, 255, 0);
     color: rgb(255, 255, 255);
-  }
-  #dots:hover{
+}
+#dots:hover{
     color:black;
-
-  }
-
-
-
-
+}
 #right{
     position:absolute;
     right: 0px;
 }
 
 @media (min-width: 992px) {
-
   .nav-button{
     background-color: rgb(255, 255, 255);
     border-bottom: 0px;
@@ -46,19 +38,11 @@
     padding-bottom: 0;
 
     color: rgb(82, 82, 82);
-
-
   }
 }
 .nav-button:hover{
   background-color: rgb(254, 166, 135);
-  
-
-
 }
-
-
-
 
 @media (max-width: 991px) {
   .nav-button{
@@ -70,6 +54,4 @@
 
     color: rgb(82, 82, 82);
   }
-
 }
-
