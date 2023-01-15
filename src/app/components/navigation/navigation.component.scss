@@ -29,7 +29,8 @@
 }
 
 @media (min-width: 992px) {
-  .nav-button{
+
+  .notfocused-button{
     background-color: rgb(255, 255, 255);
     border-bottom: 0px;
     border-radius: 5px 5px 0px 0px;
@@ -39,13 +40,26 @@
 
     color: rgb(82, 82, 82);
   }
-}
-.nav-button:hover{
-  background-color: rgb(254, 166, 135);
+  .notfocused-button:hover{
+    background-color: rgb(254, 166, 135);
+  }
+
+  .focused-button{
+    background-color: "orangered";
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    border-color: rgb(254, 166, 135);
+    margin-left: 2px;
+    padding-bottom: 0;
+
+    color: "white";
+  }
+
 }
 
 @media (max-width: 991px) {
-  .nav-button{
+
+  .notfocused-button{
     border-radius: 5px 5px 5px 5px;
     background-color: rgb(255, 255, 255);
     border-color: rgb(254, 166, 135);
@@ -54,4 +68,19 @@
 
     color: rgb(82, 82, 82);
   }
+  .notfocused-button:hover{
+    background-color: rgb(254, 166, 135);
+  }
+
+  .focused-button{
+    background-color: "orangered";
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    border-color: rgb(254, 166, 135);
+    margin-left: 2px;
+    padding-bottom: 0;
+
+    color: "white";
+  }
+
 }

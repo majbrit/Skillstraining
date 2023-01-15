@@ -87,22 +87,22 @@
                     <div class="navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <button class="nav-button" routerLink="/book" id="book-nav" (click)="select('book-nav')">
+                                <button class="nav-button notfocused-button" routerLink="/book" id="book-nav" (click)="select('book-nav')" (mouseenter)="hover('book-nav')" (mouseleave)="hoverend('book-nav')">
                                     <img src="../assets/book.svg" width="20" height="20" >
                                     <p>Buch</p>
                                 </button>
                             <li class="nav-item">
-                                <button class="nav-button" routerLink="/bonus" id="bonus-nav" (click)="select('bonus-nav')">
+                                <button class="nav-button notfocused-button" routerLink="/bonus" id="bonus-nav" (click)="select('bonus-nav')" (mouseenter)="hover('bonus-nav')" (mouseleave)="hoverend('bonus-nav')">
                                     <img src="../assets/bonus.svg" width="20" height="20" >
                                     <p>Bonuspunkte</p>
                                 </button>
                             <li class="nav-item">
-                                <button class="nav-button" routerLink="/case" id="case-nav" (click)="select('case-nav')">
+                                <button class="nav-button notfocused-button" routerLink="/case" id="case-nav" (click)="select('case-nav')"  (mouseenter)="hover('case-nav')" (mouseleave)="hoverend('case-nav')">
                                     <img src="../assets/case.svg" width="20" height="20" >
                                     <p>Notfallkoffer</p>
                                 </button>
                             <li class="nav-item">
-                                <button class="nav-button" routerLink="/notebook" id="note-nav" (click)="select('note-nav')">
+                                <button class="nav-button notfocused-button" routerLink="/notebook" id="note-nav" (click)="select('note-nav')" (mouseenter)="hover('note-nav')" (mouseleave)="hoverend('note-nav')">
                                     <img src="../assets/note.svg" width="20" height="20" >
                                     <p>Notizbuch</p>
                                 </button>
