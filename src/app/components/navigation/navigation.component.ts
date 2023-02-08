@@ -11,16 +11,6 @@ export class NavigationComponent {
   select(navItem:string){
 
     console.log("select");
-    /*
-    if(this.selected != null && this.selected != ''){
-      console.log("select neeein");
-      (<HTMLInputElement>document.getElementById(this.selected)).classList.remove("focused-button");
-      (<HTMLInputElement>document.getElementById(this.selected)).classList.add("notfocused-button");
-    }
-
-    (<HTMLInputElement>document.getElementById(navItem)).classList.remove("notfocused-button");
-    (<HTMLInputElement>document.getElementById(navItem)).classList.add("focused-button");
-    */
 
     if(this.selected != null && this.selected != ''){
       (<HTMLInputElement>document.getElementById(this.selected)).style.backgroundColor="white";

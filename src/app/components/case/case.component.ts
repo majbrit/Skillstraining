@@ -13,7 +13,6 @@ export class CaseComponent {
     this.selected = this.heroService.getSelectedCase();
     this.text = this.heroService.getTextCase();
     this.headings = heroService.getHeadingsCase();
-    this.heading = this.heroService.getHeadingCase();
    }
   heading: Array<string> = []
   headings: any = [];
@@ -34,7 +33,7 @@ export class CaseComponent {
     return 'visible';
   }
 
-  somefunction(heading:string, id:string){
+  select(id:string){
     for (var h of this.headings) {
       if(id==h.id){
         this.text = h.text;
@@ -48,12 +47,14 @@ export class CaseComponent {
 
   delete(){
     this.headings = this.heroService.getHeadingsCase();
-    this.heading = this.heroService.getHeadingCase();
-    this.headings.splice(this.heading.indexOf(this.heroService.getSelectedCase()),1);
-    this.heading.splice(this.heading.indexOf(this.heroService.getSelectedCase()),1);
-
+    let index: number = 0;
+    for (var h of this.headings) {
+      if(this.heroService.getIdCase()==h.id){
+        this.headings.splice(index, 1);
+      }
+      index++;
+    }
     this.heroService.setHeadingsCase(this.headings);
-    this.heroService.setHeadingCase(this.heading);
     this.heroService.setIdCase('');
     
     (<HTMLInputElement>document.getElementById('deleteDialog')).style.display = "none";

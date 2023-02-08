@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
 import { HeroService } from '../../hero.service';
-import { timer } from 'rxjs';
-import { take } from 'rxjs/operators';
-import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-book',

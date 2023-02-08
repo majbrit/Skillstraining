@@ -12,7 +12,7 @@
         <div class="col-md white">
           <div class="nav flex-column nav-pills point" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <div *ngFor="let h of headings">
-              <a class="nav-link" id="{{h.id}}" data-toggle="pill" role="tab" aria-controls="v-pills-home" aria-selected="false" (click)="somefunction(h.heading, h.id)"
+              <a class="nav-link" id="{{h.id}}" data-toggle="pill" role="tab" aria-controls="v-pills-home" aria-selected="false" (click)="select(h.id)"
               [style.background-color]="color(h.id)">{{h.heading}}</a>
             </div>
           </div>

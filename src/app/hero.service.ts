@@ -24,14 +24,12 @@ export class HeroService {
   textBook: string = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.';
   oldIdBook: string = 'ue1';
 
-
-  headingCase: Array<string> = ['Überschrift 2', 'Wahrnehmen', 'Übung zum Teilnehmen', 'Skill xyz']
   headingsCase: any = [
     { "heading": 'Gefühle: Teste Deine Kenntnisse', "id": 'n1',  "text": 'Welches Gefühl spielt eine wichtige Rolle in Deinem Leben? orem ipsum tellus nulla per commodo posuere porta diam ad taciti sagittis, vulputate libero per ligula velit ante fusce iaculis sed euismod suscipit, libero fames arcu quam tincidunt accumsan amet consequat accumsan augue. pretium lacinia dictumst sodales aenean eros, odio luctus cubilia faucibus.'},
     { "heading": 'Ziel: sich selbst annehmen', "id": 'n2',  "text": 'Ziemlich durchgeknallt, aber nicht unsympathisch! orem ipsum tellus nulla per commodo posuere porta diam ad taciti sagittis, vulputate libero per ligula velit ante fusce iaculis sed euismod suscipit, libero fames arcu quam tincidunt accumsan amet consequat accumsan augue. pretium lacinia dictumst sodales aenean eros, odio luctus cubilia faucibus.'},
     { "heading": 'Wie kann man Glaubenssätze verändern?', "id": 'n3',  "text": 'Versuche, lorem ipsum torquent dictumst nullam lorem tellus ac quis etiam odio dictumst fusce, tortor interdum purus ut etiam volutpat potenti sodales eu mi justo pretium, velit torquent id tellus imperdiet nibh placerat nullam feugiat est adipiscing. justo diam pretium id diam a, habitant inceptos curabitur congue, tempus id in venenatis.'},
     { "heading": 'Richtlinien für zielorientiertes Handeln', "id": 'n4',  "text": 'Richtlinien lorem ipsum eget commodo vehicula erat tempus tellus dapibus odio vulputate, dolor etiam fames cras primis rhoncus gravida sem sagittis potenti netus, nunc faucibus aptent mi nibh facilisis nisl suscipit convallis.'},
- ];
+  ];
   selectedCase: string = '';
   textCase: string = '';
   oldIdCase: string = '';
@@ -68,12 +66,9 @@ export class HeroService {
           return 'old';
       }
     }
-    this.headingCase.push(heading);
     this.headingsCase.push({ "heading": heading, "id": id, "text": text});
     return 'new';
   }
-
-
   public getSelectedCase(){
     return this.selectedCase;
   }
@@ -91,12 +86,6 @@ export class HeroService {
   }
   public setTextCase(t : string){
     this.textCase = t;
-  }
-  public getHeadingCase(){
-    return this.headingCase;
-  }
-  public setHeadingCase(h : Array<string>){
-    this.headingCase = h;
   }
   public getHeadingsCase(){
     return this.headingsCase;

@@ -9,7 +9,6 @@ import { BookComponent } from './components/book/book.component';
 import { CaseComponent } from './components/case/case.component';
 import { BonusComponent } from './components/bonus/bonus.component';
 import { NotebookComponent } from './components/notebook/notebook.component';
-import { SettingsComponent } from './components/settings/settings.component';
 import { HomeComponent } from './components/home/home.component';
 
 
@@ -22,7 +21,6 @@ import { HomeComponent } from './components/home/home.component';
     CaseComponent,
     BonusComponent,
     NotebookComponent,
-    SettingsComponent,
     HomeComponent
   ],
   imports: [
